@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number...</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-color: #212121;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        h1{
+            color: aliceblue;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-wrap-style: balance;
+        }
+        .bottom{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        input[type="number"],button{
+            width: 11rem;
+            height: 6vh;
+            background-color: azure;
+            text-align: center;
+            font-size: 1rem;
+            border-radius: 25px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        }
+        button{
+            background-color: salmon;
+        }
+        .headings{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        #result{
+            width: 40%;
+            height: 15vh;
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="headings">
+            <h1 id="result"></h1>
+            <h1>Guess the number between 1 to 10</h1>
+        </div>
+        <div class="bottom">
+            <div>
+                <input type="number" id="choice" placeholder="Your choice..." max="10">
+            </div>
+            <div >
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</html>
